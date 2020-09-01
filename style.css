@@ -1,0 +1,167 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-weight:400;
+    padding:0px;
+    margin:0px;
+    background-color:hsl(257, 40%, 49%);
+}
+h1,button{
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    display:grid;
+    grid-template-columns: 500px 500px 410px;
+    grid-template-areas:"hd hd hd" "intro intro intro" "fo fo fo";
+    background:url("images/bg-desktop.svg") no-repeat ;
+ 
+}
+header{
+    grid-area: hd;
+    padding-top:54px;
+    padding-left:67px;
+    
+}
+header img{
+    width:220px;
+}
+.intro-sec{
+    grid-area: intro;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.intro-sec .intro-img 
+{
+    width:695px;
+    padding-top:90px;
+    padding-left:20px;
+ 
+}
+.intro-sec .intro-img img{
+    width:100%;
+}
+.intro-content{
+    width:522px;
+    padding-top:98px;
+    padding-left:10px;
+    color:#ffffff;
+ 
+}
+.intro-content h1{
+    font-size:2.5em;
+    margin-bottom:15px;
+}
+.intro-content p{
+    width:98%;
+    font-size:18px;
+    line-height: 1.5em;
+    font-weight: 400;
+
+}
+.intro-content button{
+    width:200px;
+    height: 55px;
+    background-color:#ffffff ;
+    color:hsl(257, 40%, 49%);
+    font-size: 18px;
+    border: none;
+    border-radius: 30px;
+    font-weight: 400;
+    margin-top:9px;
+    box-shadow: 0 0 15px hsl(256, 38%, 23%);
+ 
+}
+.intro-content button:hover{
+    cursor: pointer;
+   
+}
+.intro-content button:focus {/*to remove the colored outline when press on it*/ 
+    outline:0;
+}
+footer{
+    grid-area: fo;
+    padding:15px 40px 35px 0px;
+}
+footer .social-media{
+    float:right;
+}
+footer .social-media .circle {
+    height: 38px;
+    width: 38px;
+    background-color:hsl(257, 40%, 49%) ;
+    border:1px solid #ffffff;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    margin-right:11px;
+
+  }
+  .fab{
+    color:#ffffff;
+    margin:10px auto;
+    font-size: 18px;
+  }
+  @media(max-width:922px)
+{
+    .container{
+        display:grid;
+        grid-template-columns:250px 250px 220px ;
+        background:url("images/bg-mobile.svg") no-repeat ;
+        background-size: contain;
+
+    }
+    .intro-sec{
+        flex-direction: column;
+    }
+    header{
+        padding-top:60px;
+    }
+    header img{
+        width:260px;
+    }
+    .intro-sec .intro-img 
+    {
+    width:600px;
+    padding-top:120px;
+    padding-left:70px;
+    }
+    .intro-content{
+        text-align: center;
+        margin:0px auto;
+        width:630px;
+        padding-top:85px;
+        padding-left:14px;
+    }
+ .intro-content h1{
+        font-size:2.9em;
+    }
+    .intro-content p{
+        font-size:33px;
+        line-height: 1.4em;
+        padding-left: 20px;
+    }
+    .intro-content button{
+        width:400px;
+        height: 77px;
+        border-radius: 50px;
+        font-size: 25px;
+        margin-top:18px;
+        margin-left:10px;
+    }
+    footer{
+        padding:130px 40px 83px 64px;
+        text-align: center;
+    }
+    footer .social-media{
+        float:none;
+    }
+    footer .social-media .circle {
+        height: 54px;
+        width: 54px;
+        margin-right:10px;
+      }
+      .fab{
+        margin:15px auto;
+        font-size: 24px;
+      }
+}
