@@ -73,6 +73,10 @@ header img{
 }
 .intro-content button:hover{
     cursor: pointer;
+    width:220px;
+    height: 60px;
+    font-size: 20px;
+    box-shadow: 0 0 15px hsl(257, 12%, 70%);
    
 }
 .intro-content button:focus {/*to remove the colored outline when press on it*/ 
@@ -94,12 +98,18 @@ footer .social-media .circle {
     display: inline-block;
     text-align: center;
     margin-right:11px;
-
+    font-size: 18px;
+  }
+  footer .social-media .circle:hover{
+    cursor: pointer;  
+    height: 42px;
+    width: 42px;
+    font-size: 20px;
   }
   .fab{
     color:#ffffff;
     margin:10px auto;
-    font-size: 18px;
+   
   }
   @media(max-width:922px)
 {
@@ -148,6 +158,13 @@ footer .social-media .circle {
         margin-top:18px;
         margin-left:10px;
     }
+    .intro-content button:hover{
+        width:420px;
+        height: 80px;
+        font-size: 27px;
+        box-shadow: 0 0 15px hsl(257, 12%, 70%);
+       
+    }
     footer{
         padding:130px 40px 83px 64px;
         text-align: center;
@@ -159,9 +176,15 @@ footer .social-media .circle {
         height: 54px;
         width: 54px;
         margin-right:10px;
+        font-size: 24px;
+      }
+      footer .social-media .circle:hover{
+        cursor: pointer;
+        height: 56px;
+        width: 56px;
+        font-size: 26px;
       }
       .fab{
         margin:15px auto;
-        font-size: 24px;
       }
 }
