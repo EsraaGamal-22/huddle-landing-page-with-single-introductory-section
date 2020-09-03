@@ -69,6 +69,7 @@ header img{
     font-weight: 400;
     margin-top:9px;
     box-shadow: 0 0 15px hsl(256, 38%, 23%);
+    transition: width 1s, height 1s, font-size 1s; /*need this for the hover for button to be smooth */
  
 }
 .intro-content button:hover{
@@ -99,6 +100,7 @@ footer .social-media .circle {
     text-align: center;
     margin-right:11px;
     font-size: 18px;
+    transition: width 1s, height 1s, font-size 1s;
   }
   footer .social-media .circle:hover{
     cursor: pointer;  
