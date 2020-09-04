@@ -8,9 +8,24 @@ body{
 h1,button{
     font-family: 'Poppins', sans-serif;
 }
+/* Desktops and laptops ----------- */
+@media only screen and (min-width : 1224px) {
+    .container{
+        display:grid;
+        grid-template-columns: 500px 500px 300px;
+        background-color:red;
+
+    }
+ }
+
+@media only screen and (min-width:1440px)
+{
+    .container{
+        display:grid;
+        grid-template-columns: 500px 500px 410px;
+    }
+}
 .container{
-    display:grid;
-    grid-template-columns: 500px 500px 410px;
     grid-template-areas:"hd hd hd" "intro intro intro" "fo fo fo";
     background:url("images/bg-desktop.svg") no-repeat ;
  
@@ -29,6 +44,7 @@ header img{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+   /* background-color: greenyellow;*/
 }
 .intro-sec .intro-img 
 {
